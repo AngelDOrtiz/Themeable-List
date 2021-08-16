@@ -2,13 +2,13 @@ import React from 'react';
 import { render } from 'react-dom';
 import App from './components/app/App';
 import { CharacterProvider } from './state/CharacterProvider';
-import { ThemeProvider } from 'styled-components';
+import { useTheme } from './state/useTheme';
 render(
  
   <CharacterProvider>
-    <ThemeProvider>
+    <useTheme>
       <App />
-    </ThemeProvider>
+    </useTheme>
   </CharacterProvider>,
   document.getElementById('root')
 );
