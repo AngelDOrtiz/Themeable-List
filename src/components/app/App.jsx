@@ -6,8 +6,10 @@ import Header from '../header/Header';
 export default function App() {
   return (
     <>
-      <Header />
-      <CharacterList />
+      <div style={{ height: '100vh' }}>
+        <Header />
+        <CharacterList />
+      </div>
     </>
   );
 }

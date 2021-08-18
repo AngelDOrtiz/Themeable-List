@@ -12,7 +12,7 @@ export const CharacterProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    apiMap[selectedApi]().CharacterContext(setCharacters);
+    apiMap[selectedApi]().then(setCharacters);
   }, [selectedApi]);
 
   return (
